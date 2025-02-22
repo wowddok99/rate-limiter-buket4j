@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class RateLimiter {
-
     private static final int TOKEN_CONSUMPTION_COUNT = 1; // 요청 1건당 소비할 토큰 개수
     private final Bucket bucket; // Bucket4j에서 제공하는 속도 제한 객체 (Bucket4jConfig에서 주입됨)
 
